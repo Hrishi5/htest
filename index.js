@@ -1,6 +1,6 @@
 const express = require('express') ;
 var app = express() ;
-var port = 7000 ;
+var port = process.env.PORT || 7000 ;
 var admin = require('firebase-admin') ;
 var bodyParser = require('body-parser') ;
 var serviceAccount = require("./serviceAccountKey.json");
